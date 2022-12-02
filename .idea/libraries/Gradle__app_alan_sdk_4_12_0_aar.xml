@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: app.alan:sdk:4.12.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0bee3a84d5fd6456456f035a53a29fe7/jetified-sdk-4.12.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0bee3a84d5fd6456456f035a53a29fe7/jetified-sdk-4.12.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0bee3a84d5fd6456456f035a53a29fe7/jetified-sdk-4.12.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/app.alan/sdk/4.12.0/a4e24fd580df508f3bd7b1d6d17d60ca608417d3/sdk-4.12.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
