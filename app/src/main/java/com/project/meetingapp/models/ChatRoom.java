@@ -1,20 +1,18 @@
-package com.example.finalprojectdv.message;
+package com.project.meetingapp.models;
 
 import android.util.Log;
+
+import com.google.firebase.database.IgnoreExtraProperties;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import com.example.finalprojectdv.User;
-import com.google.firebase.database.IgnoreExtraProperties;
 
 @IgnoreExtraProperties
 public class ChatRoom implements Comparable<ChatRoom> {
     public int id_room;
     public String user1;
     public String user2;
-    public User detailuser;
     public DetailMessage Lastmessage;
 
     public ChatRoom(){

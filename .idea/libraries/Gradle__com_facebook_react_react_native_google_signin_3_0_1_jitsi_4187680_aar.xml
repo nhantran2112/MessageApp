@@ -1,9 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.facebook.react:react-native-google-signin:3.0.1-jitsi-4187680@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c73444e9d5f0d920471bf14fd78e2ac8/jetified-react-native-google-signin-3.0.1-jitsi-4187680/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c73444e9d5f0d920471bf14fd78e2ac8/jetified-react-native-google-signin-3.0.1-jitsi-4187680/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c73444e9d5f0d920471bf14fd78e2ac8/jetified-react-native-google-signin-3.0.1-jitsi-4187680/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e14887692d44d81f7342f04b01b48cc8/jetified-react-native-google-signin-3.0.1-jitsi-4187680/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/393f883b1f34900136a1be461a975fb4/jetified-react-native-google-signin-3.0.1-jitsi-4187680/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/393f883b1f34900136a1be461a975fb4/jetified-react-native-google-signin-3.0.1-jitsi-4187680/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/393f883b1f34900136a1be461a975fb4/jetified-react-native-google-signin-3.0.1-jitsi-4187680/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

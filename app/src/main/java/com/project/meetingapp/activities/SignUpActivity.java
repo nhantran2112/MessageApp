@@ -2,6 +2,7 @@ package com.project.meetingapp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
@@ -87,7 +88,7 @@ public class SignUpActivity extends AppCompatActivity {
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                 })
-                .addOnFailureListener(e -> {
+                .addOnFailureListener(e -> {    
                     buttonSignUp.setVisibility(View.VISIBLE);
                     signUpProgress.setVisibility(View.INVISIBLE);
                     Toast.makeText(SignUpActivity.this, "Error woi : "+ e.getMessage(), Toast.LENGTH_SHORT).show();

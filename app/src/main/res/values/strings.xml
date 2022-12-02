@@ -20,4 +20,6 @@
     <string name="sign_out">Sign Out</string>
     <string name="incoming_meeting_invitation">Incoming Meeting Invitation</string>
     <string name="sending_meeting_invitation">Sending Meeting Invitation</string>
+    <string name="start_a_conversation">start a conversation</string>
+    <string name="input_message">Input message</string>
 </resources>

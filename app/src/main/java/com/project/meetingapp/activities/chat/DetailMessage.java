@@ -1,4 +1,4 @@
-package com.example.finalprojectdv.message;
+package com.project.meetingapp.activities.chat;
 
 public class DetailMessage {
     public String user_send;
