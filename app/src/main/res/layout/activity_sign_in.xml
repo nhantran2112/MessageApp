@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
-    tools:context=".activities.SignInActivity">
+    android:background="@color/grey"
+    tools:context=".ui.signin.SignInActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
             android:id="@+id/layoutHeader"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_150sdp"
-            android:background="@color/colorPrimary"
+            android:background="@color/yellow"
             android:gravity="center"
             android:orientation="vertical"
             app:layout_constraintTop_toTopOf="parent">
@@ -146,6 +146,7 @@
             android:text="@string/sign_in"
             android:textColor="@color/colorTextIcons"
             android:textSize="@dimen/_12ssp"
+            app:backgroundTint="@color/yellow"
             app:layout_constraintTop_toBottomOf="@+id/cardSignIn" />
 
         <ProgressBar

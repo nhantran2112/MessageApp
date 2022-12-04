@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.react:react-native-slider:3.0.3-jitsi-9316999@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/14169a60af62b0072844b94539f7e2e3/jetified-react-native-slider-3.0.3-jitsi-9316999/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/14169a60af62b0072844b94539f7e2e3/jetified-react-native-slider-3.0.3-jitsi-9316999/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/14169a60af62b0072844b94539f7e2e3/jetified-react-native-slider-3.0.3-jitsi-9316999/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.react/react-native-slider/3.0.3-jitsi-9316999/d2712e63e99bcd50a630a04945961a264987f13b/react-native-slider-3.0.3-jitsi-9316999-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

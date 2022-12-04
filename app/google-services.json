@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "524671000149",
-    "firebase_url": "https://fakeshopee-ed616-default-rtdb.firebaseio.com",
-    "project_id": "fakeshopee-ed616",
-    "storage_bucket": "fakeshopee-ed616.appspot.com"
+    "project_number": "399850548886",
+    "firebase_url": "https://voicechatai-6b71d-default-rtdb.firebaseio.com",
+    "project_id": "voicechatai-6b71d",
+    "storage_bucket": "voicechatai-6b71d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:524671000149:android:39052f2974498236d7fedc",
+        "mobilesdk_app_id": "1:399850548886:android:0ae941155e1691d5151cb7",
         "android_client_info": {
-          "package_name": "com.example.finalprojectdv"
+          "package_name": "com.project.meetingapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "524671000149-phtkd6dcosea0gkt2pv8j6abk0v16g8j.apps.googleusercontent.com",
+          "client_id": "399850548886-fab4oivnm0hv3e7lffqkv7da0mtkh7hn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBlbYRgavtk9rU6KBWPxb05pASGzIqk0Ak"
+          "current_key": "AIzaSyAvP3rO7FnXVF7GWP3ayTqcNg0VhYD5ZEU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "524671000149-phtkd6dcosea0gkt2pv8j6abk0v16g8j.apps.googleusercontent.com",
+              "client_id": "399850548886-fab4oivnm0hv3e7lffqkv7da0mtkh7hn.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

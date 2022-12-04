@@ -15,7 +15,7 @@ public class ChatRoom implements Comparable<ChatRoom> {
     public String user2;
     public DetailMessage Lastmessage;
 
-    public ChatRoom(){
+    public ChatRoom() {
 
     }
 
@@ -34,7 +34,7 @@ public class ChatRoom implements Comparable<ChatRoom> {
             date1 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").parse(Lastmessage.time);
             Log.d("DDDD", "compareTo: alo");
         } catch (ParseException e) {
-            Log.d("DDDD", "compareTo: "+e.getLocalizedMessage());
+            Log.d("DDDD", "compareTo: " + e.getLocalizedMessage());
             e.printStackTrace();
         }
         return date.compareTo(date1);

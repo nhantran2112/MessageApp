@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.chat.ChatRoomActivity">
+    tools:context=".ui.chat.ChatRoomActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tbChatRoom"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/colorPrimary"
+        android:background="@color/yellow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -52,7 +52,7 @@
         android:layout_height="60dp"
         android:orientation="horizontal"
         android:padding="2dp"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toTopOf="@id/imgPick">
 
         <EditText
             android:id="@+id/edtInput"
@@ -66,6 +66,16 @@
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/btnPickImg"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon="@drawable/ic_image"
+            app:iconGravity="textStart"
+            app:iconTint="@color/colorPrimary" />
+
+        <Button
             android:id="@+id/btnSend"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="0dp"
@@ -75,4 +85,28 @@
             app:iconGravity="textStart"
             app:iconTint="@color/colorPrimary" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgPick"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/btnClose"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_weight="1"
+        android:padding="@dimen/_4sdp"
+        app:icon="@drawable/ic_close"
+        app:iconGravity="textStart"
+        app:iconTint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lnlInputMess" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,7 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-import com.project.meetingapp.activities.IncomingInvitationActivity;
+import com.project.meetingapp.ui.invitation.IncomingInvitationActivity;
 import com.project.meetingapp.utilities.Constants;
 
 public class MessagingService extends FirebaseMessagingService {
@@ -52,7 +52,7 @@ public class MessagingService extends FirebaseMessagingService {
                 );
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
-            } else if (type.equals(Constants.REMOTE_MSG_INVITATION_RESPONSE)){
+            } else if (type.equals(Constants.REMOTE_MSG_INVITATION_RESPONSE)) {
                 Intent intent = new Intent(Constants.REMOTE_MSG_INVITATION_RESPONSE);
                 intent.putExtra(
                         Constants.REMOTE_MSG_INVITATION_RESPONSE,

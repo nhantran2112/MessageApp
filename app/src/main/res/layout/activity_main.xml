@@ -5,58 +5,117 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    tools:context=".activities.MainActivity">
+    tools:context=".ui.home.MainActivity">
 
-    <LinearLayout
-        android:id="@+id/layoutHeader"
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/layoutHeader"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="?actionBarSize"-->
+    <!--        android:background="@color/yellow"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:paddingStart="@dimen/_8sdp"-->
+    <!--        android:paddingEnd="@dimen/_8sdp"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textTitle"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginEnd="@dimen/_8sdp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:fontFamily="@font/ubuntu_bold"-->
+    <!--            android:includeFontPadding="false"-->
+    <!--            android:textColor="@color/colorTextIcons"-->
+    <!--            android:textSize="@dimen/_16ssp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textSignOut"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:fontFamily="@font/ubuntu_bold"-->
+    <!--            android:gravity="center"-->
+    <!--            android:includeFontPadding="false"-->
+    <!--            android:text="@string/sign_out"-->
+    <!--            android:textColor="@color/colorTextIcons"-->
+    <!--            android:textSize="@dimen/_12ssp" />-->
+
+    <!--    </LinearLayout>-->
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tbMain"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/colorPrimary"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_main"
+        app:title="Contact"
+        app:titleTextColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/lnlInFo"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginVertical="4dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingStart="@dimen/_8sdp"
-        android:paddingEnd="@dimen/_8sdp"
-        app:layout_constraintTop_toTopOf="parent">
+        android:paddingHorizontal="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbMain">
 
         <TextView
-            android:id="@+id/textTitle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_8sdp"
-            android:layout_weight="1"
-            android:fontFamily="@font/ubuntu_bold"
-            android:includeFontPadding="false"
-            android:textColor="@color/colorTextIcons"
-            android:textSize="@dimen/_16ssp" />
-
-        <TextView
-            android:id="@+id/textSignOut"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:id="@+id/textFirstChar"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/background_user_icon"
             android:fontFamily="@font/ubuntu_bold"
             android:gravity="center"
             android:includeFontPadding="false"
-            android:text="@string/sign_out"
+            android:textAllCaps="true"
             android:textColor="@color/colorTextIcons"
-            android:textSize="@dimen/_12ssp" />
+            android:textSize="@dimen/_22ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/grey_dam"
+        app:layout_constraintTop_toBottomOf="@id/lnlInFo" />
+
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutHeader">
+        app:layout_constraintTop_toBottomOf="@+id/lnlInFo">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewUsers"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:padding="@dimen/_5sdp"
             android:clipToPadding="false"
             android:orientation="vertical"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            android:padding="6dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_container_user" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
@@ -71,7 +130,7 @@
         android:textColor="@android:color/holo_red_light"
         android:textSize="@dimen/_12ssp"
         android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@id/layoutHeader" />
+        app:layout_constraintTop_toBottomOf="@id/lnlInFo" />
 
     <ImageView
         android:id="@+id/imageConference"
@@ -94,6 +153,6 @@
         android:visibility="visible"
         app:button_horizontal_align="right"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
