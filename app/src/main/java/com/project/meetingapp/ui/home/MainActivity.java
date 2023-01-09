@@ -11,16 +11,12 @@ import android.graphics.RectF;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.os.PowerManager;
-import android.provider.Settings;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
@@ -66,7 +62,6 @@ public class MainActivity extends AppCompatActivity implements UsersListener {
     private SwipeRefreshLayout swipeRefreshLayout;
     private ImageView imageConference;
     private MaterialToolbar tbMain;
-    private final int REQUEST_CODE_BATTERY_OPTIMIZATIONS = 1;
 
     private AlanButton alanButton;
 
@@ -85,7 +80,6 @@ public class MainActivity extends AppCompatActivity implements UsersListener {
         mapping();
         initListener();
         getUsers();
-        checkForBatteryOptimizations();
     }
 
     private void mapping() {
@@ -357,36 +351,6 @@ public class MainActivity extends AppCompatActivity implements UsersListener {
             });
         } else {
             imageConference.setVisibility(View.GONE);
-        }
-    }
-
-    private void checkForBatteryOptimizations() {
-        PowerManager powerManager = (PowerManager) getSystemService(POWER_SERVICE);
-        if (!powerManager.isIgnoringBatteryOptimizations(getPackageName())) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setTitle("Warning");
-            builder.setMessage("Battery optimization is enabled. It can interrupt running background services.");
-            builder.setPositiveButton("Disable", (dialogInterface, i) -> {
-                Intent intent = new Intent(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS);
-                startActivityForResult(intent, REQUEST_CODE_BATTERY_OPTIMIZATIONS);
-            });
-            builder.setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.dismiss());
-            builder.create().show();
-        }
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        alanButton.clearCallbacks();
-        alanButton.deactivate();
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_CODE_BATTERY_OPTIMIZATIONS) {
-            checkForBatteryOptimizations();
         }
     }
 }

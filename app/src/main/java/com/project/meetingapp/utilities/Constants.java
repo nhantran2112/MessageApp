@@ -49,5 +49,5 @@ public class Constants {
     public static final String USER2 = "user2";
     public static final String DD_MM_YYYY_HH_MM_SS = "dd/MM/yyyy HH:mm:ss";
 
-    public static final String KEY_ALAN = "1046f49b20850fd8c2516965838db4452e956eca572e1d8b807a3e2338fdd0dc/stage";
+    public static final String KEY_ALAN = "06c919581eb2ddc5b87bc450414beced2e956eca572e1d8b807a3e2338fdd0dc/stage";
 }

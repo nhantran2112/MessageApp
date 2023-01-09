@@ -23,4 +23,6 @@
     <string name="start_a_conversation">start a conversation</string>
     <string name="input_message">Input message</string>
     <string name="hello_i_want_to_buy_sneaker_can_you_recommend_some_models_for_me">Hello , I want to buy sneaker , can you recommend some models for me?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
